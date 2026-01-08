@@ -100,7 +100,7 @@ let package = Package(
             name: "DatadogTrace",
             dependencies: [
                 .target(name: "DatadogInternal"),
-                .product(name: "OpenTelemetryApi", package: "opentelemetry-swift-core")
+                .product(name: "OpenTelemetryApi", package: "opentelemetry-swift")
             ],
             path: "DatadogTrace/Sources"
         ),

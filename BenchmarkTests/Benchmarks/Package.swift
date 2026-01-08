@@ -13,14 +13,14 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/open-telemetry/opentelemetry-swift-core", .upToNextMinor(from: "2.3.0"))
+        .package(url: "https://github.com/open-telemetry/opentelemetry-swift", from: "2.0.1")
     ],
     targets: [
         .target(
             name: "DatadogBenchmarks",
             dependencies: [
-                .product(name: "OpenTelemetryApi", package: "opentelemetry-swift-core"),
-                .product(name: "OpenTelemetrySdk", package: "opentelemetry-swift-core"),
+                .product(name: "OpenTelemetryApi", package: "opentelemetry-swift"),
+                .product(name: "OpenTelemetrySdk", package: "opentelemetry-swift"),
             ]
         )
     ]
